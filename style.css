@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+	font-family: sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	min-height: 500vh;
+	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.6;
+}
+
+h2 {
+	line-height: 1.6;
+}
+
+svg {
+	padding: 1rem;
+	position: relative;
+	overflow: visible;
+}
+
+.cell:hover {
+	stroke: dodgerblue;
+}
+
+#tooltip {
+	padding: 1rem;
+	background: dodgerblue;
+	color: white;
+	border-radius: .25rem;
+	position: absolute;
+	white-space: nowrap;
+	line-height: 1.6;
+}
