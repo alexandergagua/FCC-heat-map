@@ -32,7 +32,7 @@ fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
 		.text(`
 			${monthlyVariance[0].year} - 
 			${monthlyVariance[monthlyVariance.length - 1].year}:
-			base temperatur ${baseTemperature}°C
+			base temperature ${baseTemperature}°C
 		`)
 
 	// Initializing SVG
@@ -147,7 +147,7 @@ fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
          	.style("top", (e.pageY - padding) + "px")
 				.html(`
 					${d.year} - ${month[d.month - 1]}<br>
-					Temperatur: ${(baseTemperature + d.variance).toFixed(1)}°C<br>
+					Temperature: ${(baseTemperature + d.variance).toFixed(1)}°C<br>
 					Variance: ${d.variance.toFixed(1)}°C
 				`)
 				.attr('data-year', d.year)
